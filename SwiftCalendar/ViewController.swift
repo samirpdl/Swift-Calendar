@@ -8,18 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, CalendarCallBack {
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    var selectedDate = Date()
+    
+    @IBAction func showCalendar(_ sender: UIButton){
+        let CalendarViewController = self.storyboard?.instantiateViewController(withIdentifier: "CalendarViewController") as! CalendarViewController
+        CalendarViewController.modalPresentationStyle = .overCurrentContext
+        CalendarViewController.delegate = self
+        CalendarViewController.selectedDate = selectedDate
+        self.present(CalendarViewController, animated: false, completion: nil)
+    }
+    
+    func didSelectDate(date: Date) {
+        selectedDate = date
+        dateLabel.isHidden = false
+        
+        dateLabel.text = date.getTitleDateFC()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-

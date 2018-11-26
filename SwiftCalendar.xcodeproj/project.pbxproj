@@ -14,6 +14,7 @@
 		37E7BC0120CE7C5C009633F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E7BBFF20CE7C5C009633F8 /* LaunchScreen.storyboard */; };
 		37E7BC0C20CE7C5D009633F8 /* SwiftCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7BC0B20CE7C5D009633F8 /* SwiftCalendarTests.swift */; };
 		37E7BC1720CE7C5D009633F8 /* SwiftCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7BC1620CE7C5D009633F8 /* SwiftCalendarUITests.swift */; };
+		37E7BC2520CEA13A009633F8 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7BC2420CEA13A009633F8 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		37E7BC1220CE7C5D009633F8 /* SwiftCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E7BC1620CE7C5D009633F8 /* SwiftCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalendarUITests.swift; sourceTree = "<group>"; };
 		37E7BC1820CE7C5D009633F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E7BC2420CEA13A009633F8 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		37E7BBF520CE7C58009633F8 /* SwiftCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				37E7BC2420CEA13A009633F8 /* CalendarViewController.swift */,
 				37E7BBF620CE7C58009633F8 /* AppDelegate.swift */,
 				37E7BBF820CE7C58009633F8 /* ViewController.swift */,
 				37E7BBFA20CE7C58009633F8 /* Main.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E7BC2520CEA13A009633F8 /* CalendarViewController.swift in Sources */,
 				37E7BBF920CE7C58009633F8 /* ViewController.swift in Sources */,
 				37E7BBF720CE7C58009633F8 /* AppDelegate.swift in Sources */,
 			);
